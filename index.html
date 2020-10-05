@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chazzflix</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+          <h2 class="logotipo">Chazzflix</h2>
+            <nav>
+                <a href="#" class="activo">Inicio</a>
+                <a href="#">Programas</a>
+                <a href="#">Peliculas</a>
+                <a href="#">Más Recientes</a>
+                <a href="#">Mi lista</a>
+                <form action="#" class="newsletter" id="search">
+                    <input type="text" class="newsletter__input" id="searchInput" placeholder="Busca una película..."><br>
+                    <input type="submit" class="newsletter__submit" id="searchBtn" value="Buscar">
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Interestellar</h3>
+				<p class="descripcion">
+					Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+        
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+                
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                    </div> 
+                </div>
+                <button role="button" id="flecha-derecha" class="flecha-derecha">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Próximamente</h3>
+				<div class="indicador"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="fle-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+                <div class="contenedor-carousel contenedor-prox">
+                    <div class="movie-top">
+                    </div>
+                </div>
+                <button role="button" id="fle-derecha" class="flecha-derecha">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-principal">
+                <div class="contenedor-carousel">
+                    <div id="result" class="carousel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/searchMovie.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
